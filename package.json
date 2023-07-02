@@ -1,0 +1,11 @@
+{
+  "name": "guilded-prefix-package",
+  "version": "1.0.0",
+  "description": "A Guilded Prefix Bot Package Made By KryClopz.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KryClopz",
+  "license": "ISC"
+}
