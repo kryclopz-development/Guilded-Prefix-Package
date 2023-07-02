@@ -1,6 +1,5 @@
 require("dotenv").config();
 const Guilded = require('guilded.js')
-const { Client, CacheCollection } = Guilded;
 const chalk = require('chalk');
 
 // Clear The Console
@@ -10,12 +9,12 @@ console.clear()
 console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.magenta(chalk.underline(chalk.bold(`Bot Starting...`))))
 
 // Define The Client
-const client = new Client({
+const client = new Guilded.Client({
   token: process.env.TOKEN,
 });
 
 // Define Commands Array
-client.commands = new CacheCollection();
+client.commands = new Guilded.CacheCollection();
 
 // Start Handlers
 ['eventsHandler', 'commandsHandler'].forEach(handler => {
