@@ -2,7 +2,7 @@ module.exports = {
 	name: 'ping',
 	aliases: ['latency', 'lag'],
 	description: "Sends the client's ping.",
-	execute(message, args, commandName, client, Guilded) {
+	execute(message, client) {
 		// Example Command
 
 		// Define The Response

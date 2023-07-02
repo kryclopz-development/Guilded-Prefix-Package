@@ -1,7 +1,7 @@
 const fs = require('fs')
 const chalk = require('chalk');
 
-module.exports = (client, Guilded) => {
+module.exports = (client) => {
 
 	// Log Starting Of Event Loading
 	console.log(" ") // Empty Logs Make It Look Better
@@ -27,7 +27,7 @@ module.exports = (client, Guilded) => {
 			if (event.once) {
 
 				// Run It With Client.Once, Passing In The Event Name And Args And Executing
-				client.once(event.name, (...args) => event.execute(...args, client, Guilded))
+				client.once(event.name, (...args) => event.execute(...args, client))
 
 				// Log Each Event Being Loaded
 				console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.blue(chalk.bold(`${event.name}`)), (chalk.green(`Event Loaded`)))
@@ -36,7 +36,7 @@ module.exports = (client, Guilded) => {
 			} else {
 
 				// Run It With Client.On, Passing In The Event Name And Args And Executing
-				client.on(event.name, (...args) => event.execute(...args, client, Guilded))
+				client.on(event.name, (...args) => event.execute(...args, client))
 
 				// Log Each Event Being Loaded
 				console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), chalk.blue(chalk.bold(`${event.name}`)), (chalk.green(`Event Loaded`)))

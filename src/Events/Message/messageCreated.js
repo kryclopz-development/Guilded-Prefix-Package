@@ -7,7 +7,7 @@ module.exports = {
 	 * @param {Client} client
 	 * @param {Message} message
 	 */
-	async execute(message, client, Guilded) {
+	async execute(message, client) {
 		// When A Message Is Created
 
 		// If Message Does Not Start With Prefix Or Is A Bot Do Nothing
@@ -27,7 +27,7 @@ module.exports = {
 
 		try {
 			// Try To Execute The Command
-			command.execute(message, args, commandName, client, Guilded)
+			command.execute(message, args, commandName, client)
 		} catch (error) {
 			// If Execution Failed, Log The Error
 			console.log(error);

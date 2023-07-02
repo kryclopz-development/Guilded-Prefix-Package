@@ -1,7 +1,7 @@
 const fs = require('fs')
 const chalk = require('chalk');
 
-module.exports = (client, Guilded) => {
+module.exports = (client) => {
 	
 	// Log Starting Of Command Loading
 	console.log(" ") // Empty Logs Make It Look Better
