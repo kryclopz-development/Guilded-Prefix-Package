@@ -21,14 +21,12 @@ Click the Green "Code" button on the Top Right of the GitHub Page. Then Click "D
 Next, Extract the downloaded Zip Folder to wherever you would like your bot to stay.
 
 **Installing Packages**
-
-I have left a convenient "Install Packages" batch file in the folder, so you can install all the packages at the click of a button.
-
-If you would like to Manually install the packages, open Command Prompt and navigate to the folder that the package.json is located. Then run:
+To Manually install the packages, open Your Command Prompt or Terminal and navigate to the folder that the package.json is located. Then run:
 ```bash
-npm i guilded.js chalk@4.1.2 dotenv mongodb mongoose
+npm install
 ```
 This will install all the needed packages.
+
 ## Configuration
 
 All the Configuration of the Bot is located within the .env file, place your credentials and preferations in the quotations.
@@ -56,9 +54,7 @@ Now replace "<password>" with the password you made earlier for the cluster, the
 The Prefix of your bot will mainly be up to you. However, you will want to pick something that wont collide with other bots. Most common prefixes are: "/", "-", "!", "~"
 ## Running The Bot
 
-I have also left a convenient "Start Bot" batch file in the folder, so you can start the bot at the click of a button.
-
-If you would like to Manually start the Bot, open Command Prompt and navigate to the folder that the package.json is located. Then run:
+To Manually start the Bot, open Command Prompt and navigate to the folder that the package.json is located. Then run:
 ```bash
 node .
 ```
