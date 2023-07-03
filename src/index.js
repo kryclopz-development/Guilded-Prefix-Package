@@ -18,7 +18,7 @@ client.commands = new CacheCollection();
 
 // Start Handlers
 ['eventsHandler', 'commandsHandler'].forEach(handler => {
-	require(`./Handlers/${handler}`)(client, Guilded);
+	require(`./Handlers/${handler}`)(client);
 })
 
 // Login To The Bot

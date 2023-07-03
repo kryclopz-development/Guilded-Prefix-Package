@@ -27,7 +27,7 @@ module.exports = {
 
 		try {
 			// Try To Execute The Command
-			command.execute(message, args, commandName, client)
+			command.execute(message, client, args )
 		} catch (error) {
 			// If Execution Failed, Log The Error
 			console.log(error);
