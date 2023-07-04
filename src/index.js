@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { Client, CacheCollection } = require('guilded.js');
 const chalk = require('chalk');
+const fs = require('fs')
 
 // Clear The Console
 console.clear()
@@ -17,9 +18,9 @@ const client = new Client({
 client.commands = new CacheCollection();
 
 // Start Handlers
-['eventsHandler', 'commandsHandler'].forEach(handler => {
-	require(`./Handlers/${handler}`)(client);
-})
+for (const handler of fs.readdirSync('./src/Handlers').filter(f => f.endsWith('.js'))) {
+	require(`./Handlers/${handler}`)(client)
+}
 
 // Login To The Bot
 client.login();
