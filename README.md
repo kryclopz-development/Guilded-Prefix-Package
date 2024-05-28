@@ -29,7 +29,7 @@ This will install all the needed packages.
 
 ## Configuration
 
-All the Configuration of the Bot is located within the .env file, place your credentials and preferations in the quotations.
+All the Configuration of the Bot is located within the ".env.example" file, place your credentials and preferations in the quotations, then rename the file to just ".env".
 
 **Getting Bot Token**
 
